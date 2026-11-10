@@ -11,5 +11,6 @@ public class CameraController : MonoBehaviour
 
         var target = followThisGameObject.transform;
         transform.position = target.position + offset;
+        transform.LookAt(target); // new: keep the sphere centered in the view
     }
 }
